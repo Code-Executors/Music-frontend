@@ -1,16 +1,37 @@
-import React, { Component } from 'react'
-import App from './App'
-import Header from './components/Header'
+import React, { Component } from 'react';
+import App from './App';
+import Header from './components/Header';
+import AboutUs from './screens/AboutUs';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
 
-export class Main extends Component {
+
+export class MainApp extends Component {
+
     render() {
         return (
-           <>
-           <Header />
-            <App />
-            </>
+          <>
+            <Header />
+            
+            <Router>
+              <Switch>
+
+                <Route exact path="/">
+                  <App />
+                </Route>
+
+                <Route path="/about">
+                  <AboutUs />
+                </Route>
+                
+              </Switch>
+            </Router>
+          </>
         )
-    }
+      }
 }
 
-export default Main
+export default MainApp
