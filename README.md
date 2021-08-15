@@ -38,6 +38,6 @@ Summary of the idea. Music application website where you can listen to music and
 ## Credit and Collaborations
 
 Spotify Documents of how to use their library and implemented to your code.
-Organization Repo : https://github.com/Code-Executors
-Code-Executors / Music-frontend: https://github.com/Code-Executors/Music-frontend
-Code-Executors / Music-backend: https://github.com/Code-Executors/Music-backend
+[Organization Repo](https://github.com/Code-Executors)
+[Code-Executors / Music-frontend](https://github.com/Code-Executors/Music-frontend)
+[Code-Executors / Music-backend](https://github.com/Code-Executors/Music-backend)

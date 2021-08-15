@@ -1,14 +1,35 @@
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 
 
-const code = new URLSearchParams(window.location.search).get('code');
+import React, { Component } from 'react'
 
-function App() {
-  return (
-    code ? <Dashboard code = {code}/> : <Login/>
-  );
-}
 
-export default App;
+const code = new URLSearchParams(window.location.search).get("code");
+
+export class App extends Component {
+  render() {
+    return (
+     
+      code ? <Dashboard code={code} /> : <Login />
+      
+      )
+    }
+  }
+  
+export default App
+  
+  
+
+// const code = new URLSearchParams(window.location.search).get("code");
+  
+  // function App() {
+  //   return (
+  
+  //       code ? <Dashboard code={code} /> : <Login />
+  
+  //   );
+  // }
+  
+  // export default App;
