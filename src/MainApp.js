@@ -1,6 +1,8 @@
+
 import React, { Component } from 'react';
 import App from './App';
 import Header from './components/Header';
+import Footer from './components/Footer'
 import AboutUs from './screens/AboutUs';
 import {
     BrowserRouter as Router,
@@ -29,6 +31,8 @@ export class MainApp extends Component {
                 
               </Switch>
             </Router>
+
+            <Footer/>
           </>
         )
       }
