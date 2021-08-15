@@ -31,10 +31,9 @@ export class AboutUs extends Component {
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src="/ProfilePics/personal-photo.jpg/100px180" />
                     <Card.Body>
-                        <Card.Title>Bashar Aqel</Card.Title>
+                        <Card.Title>Bashar Aqleh</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                        I am 29 years old form Jordan, With a bachelor's degree in business Administration From Middle East university and currantly a student at LTUC-Abdul Aziz Al Ghurair School of Advanced Computing hoping in becoming a Web-developer in the near future
                         </Card.Text>
                     </Card.Body>
                 </Card>
