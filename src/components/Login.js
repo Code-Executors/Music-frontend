@@ -20,6 +20,12 @@ export default function Login() {
       className="d-flex justify-content-center align-items-center"
       style={{ minHeight: "100vh" ,backgroundImage: 'url(https://i.pinimg.com/originals/e6/0e/53/e60e531bb26f15c5f69c2cb35633bf46.jpg)' ,backgroundSize: "cover",}}
     >
+      {/* <p>    Premium Discover Help Download Music for everyone. Music Station is now free on mobile, tablet and computer. Listen to the
+    right music, wherever you are. What’s on Music Station? Millions of Songs There are millions of songs on Music Station HD Music
+    Listen to music as if you were listening live Stream Everywhere Stream music on your smartphone, tablet or computer
+    It’s as yeezy as Kanye West. Search Know what you want to listen to? Just search and hit play. Browse Check out the
+    latest charts, brand new releases and great playlists for right now. Discover Enjoy new music every Monday with your
+    own personal playlist. Or sit back and enjoy Radio.</p> */}
       <a className="btn btn-success btn-lg" href={AUTH_URL}>
         Start Listening
       </a>
