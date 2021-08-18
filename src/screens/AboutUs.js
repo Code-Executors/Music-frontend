@@ -9,7 +9,7 @@ export class AboutUs extends Component {
         <div class="row">
           <div class="col-sm">
             <Card style={{ width: "15rem" }}>
-              <Card.Img variant="top" src="PP.jpg" />
+              <Card.Img variant="top" src="./img/Mohammad.jpg" />
               <Card.Body>
                 <Card.Title>Mohammad Harb</Card.Title>
                 <Card.Text>
@@ -27,7 +27,7 @@ export class AboutUs extends Component {
             <Card style={{ width: "15rem" }}>
               <Card.Img
                 variant="top"
-                src="/ProfilePics/personal-photo.jpg/100px180"
+                src="./img/Jamal.png"
               />
               <Card.Body>
                 <Card.Title>Jamal Eldeen Wari </Card.Title>
@@ -45,7 +45,7 @@ export class AboutUs extends Component {
             <Card style={{ width: "15rem" }}>
               <Card.Img
                 variant="top"
-                src="/ProfilePics/personal-photo.jpg/100px180"
+                src="./img/basharaq.jpg"
               />
               <Card.Body>
                 <Card.Title>Bashar Aqleh</Card.Title>
@@ -64,7 +64,7 @@ export class AboutUs extends Component {
             <Card style={{ width: "15rem" }}>
               <Card.Img
                 variant="top"
-                src="/ProfilePics/personal-photo.jpg/100px180"
+                src="./img/Yazeed.png"
               />
               <Card.Body>
                 <Card.Title>Yazeed Al-Shami</Card.Title>
