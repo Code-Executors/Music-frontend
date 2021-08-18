@@ -34,7 +34,7 @@ export default function Login() {
        
       </Container>
      
-              <img src="./img/Untitled-4.jpg" class="img-fluid rounded-start" alt="..."  width="1500px" height="200px"  />
+              <img src="./img/Untitled-4.jpg" class="img-fluid rounded-start animated bounce infinite"  alt="..."  width="1500px" height="200px"  />
               <img src="./img/Untitled-5.jpg" class="img-fluid rounded-start" alt="..."  width="1600px" height="200px"  />
 
               
@@ -49,7 +49,7 @@ export default function Login() {
         </a>
         
     
-  </div> */} */}
+  </div> */} 
 {/* </div> */}
     </div>
   );
