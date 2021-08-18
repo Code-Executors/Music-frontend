@@ -6,7 +6,7 @@ export default class Footer extends Component {
       <div>
         <footer className="bg-dark text-center text-white">
           <div className="container p-4 pb-0">
-            <section className="mb-4">
+            <section className="mb-1">
               <a className="btn btn-btn-floating m-1" href="#!" role="button">
                 <i>
                   <img src="./img/facebook-logo.png" alt="" width="35" />{" "}
