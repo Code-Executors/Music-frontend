@@ -10,6 +10,8 @@ import {
     Route
 } from "react-router-dom";
 import Playlist from './components/Playlist';
+import Login from './components/Login';
+import Profile from './screens/Profile';
 
 
 export class MainApp extends Component {
@@ -24,6 +26,12 @@ export class MainApp extends Component {
 
                 <Route exact path="/">
                   <App />
+                </Route>
+                <Route path="/play">
+                  <Login />
+                </Route>
+                <Route path="/profile">
+                  <Profile />
                 </Route>
 
                 <Route path="/about">
