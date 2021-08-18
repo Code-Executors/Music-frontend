@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap"
 
 
 
-const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=62c9315e12544e6dbbefe73c593856fd&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
+const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=9ee854c43e39427f94857af5488dae60&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
 
 
 
