@@ -9,8 +9,8 @@
 }
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 400px;
+  width: 200x;
+  height: 300px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -51,3 +51,4 @@
   color: black;
   transform: rotateY(180deg);
 }
+

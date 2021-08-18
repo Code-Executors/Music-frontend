@@ -9,6 +9,7 @@ import {
     Switch,
     Route
 } from "react-router-dom";
+import Playlist from './components/Playlist';
 import Login from './components/Login';
 import Profile from './screens/Profile';
 
@@ -35,6 +36,9 @@ export class MainApp extends Component {
 
                 <Route path="/about">
                   <AboutUs />
+                </Route>
+                <Route path="/playlist">
+                  <Playlist />
                 </Route>
                 
               </Switch>

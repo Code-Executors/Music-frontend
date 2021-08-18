@@ -20,7 +20,8 @@ export default function useAuth(code) {
          window.location='/';
      })
  }, [code])
- 
+
+ console.log('hi'); 
  useEffect(() =>{
 
     if (!refreshToken || !expiresIn) return
