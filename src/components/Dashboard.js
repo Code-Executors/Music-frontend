@@ -1,46 +1,39 @@
-import { useState, useEffect } from "react"
-import useAuth from "./useAuth"
-import Player from "./Player"
-import TrackSearchResult from "./TrackSearchResult"
-import { Container, Form } from "react-bootstrap"
-import SpotifyWebApi from "spotify-web-api-node"
-import axios from "axios"
+import { useState, useEffect } from "react";
+import useAuth from "./useAuth";
+import Player from "./Player";
+import TrackSearchResult from "./TrackSearchResult";
+import { Container, Form } from "react-bootstrap";
+import SpotifyWebApi from "spotify-web-api-node";
+import axios from "axios";
+import Button from 'react-bootstrap/Button';
 
 const spotifyApi = new SpotifyWebApi({
-
-
-
   clientId: "9ee854c43e39427f94857af5488dae60",
-//   clientId: "29100d22a56f419e846f66a430615533",
-
 })
 
 export default function Dashboard({ code }) {
+
   const accessToken = useAuth(code)
   const [search, setSearch] = useState("")
   const [searchResults, setSearchResults] = useState([])
   const [playingTrack, setPlayingTrack] = useState()
   const [lyrics, setLyrics] = useState("");
 
-  // const[artist,setArtist] = useState('');
-  // const [title,setTitle] = useState('');
   localStorage.setItem("token", accessToken);
   function chooseTrack(track) {
     setPlayingTrack(track)
     setSearch("")
     setLyrics("")
   }
-  function adding(){
-   axios.post('http://localhost:3001/songs',playingTrack ).then((response)=>{
+  function adding() {
+    axios.post('http://localhost:3001/songs', playingTrack).then((response) => {
 
-     console.log(response);
-   })
+      console.log(response);
+    })
   }
-
 
   useEffect(() => {
     if (!playingTrack) return
-
     axios
       .get("http://localhost:3001/lyrics", {
         params: {
@@ -88,7 +81,6 @@ export default function Dashboard({ code }) {
     return () => (cancel = true)
   }, [search, accessToken])
 
-  // console.log(playingTrack);
   return (
     <Container className="d-flex flex-column py-2" style={{ height: "100vh" }}>
       <Form.Control
@@ -111,10 +103,15 @@ export default function Dashboard({ code }) {
           </div>
         )}
       </div>
-      <div>
+      <div className="d-grid gap-2">
         <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
-        <button onClick={()=>adding()}>add to playlist</button>
+        {/* <button onClick={() => adding()}>add to playlist</button> */}
+        <Button onClick={() => adding()} variant="primary" size="lg">
+          Add To Playlist
+        </Button>
       </div>
     </Container>
   )
 }
+
+

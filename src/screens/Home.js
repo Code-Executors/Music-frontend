@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Login from "../components/Login";
 
-
 export class Home extends Component {
   render() {
     return (
@@ -14,5 +13,4 @@ export class Home extends Component {
     );
   }
 }
-
 export default Home;
