@@ -28,6 +28,12 @@ export default function Login() {
           Start Listening
         </a>
       </Container>
+<<<<<<< HEAD
+     
+              <img src="./img/Untitled-4.jpg" class="img-fluid rounded-start animated bounce infinite"  alt="..."  width="1500px" height="200px"  />
+              <img src="./img/Untitled-5.jpg" class="img-fluid rounded-start" alt="..."  width="1600px" height="200px"  />
+=======
+>>>>>>> e1e1593af14ca9d5d05b44af32f1ddfd955f2332
 
       <img
         src="./img/Untitled-4.jpg"
