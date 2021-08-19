@@ -65,5 +65,3 @@ export class Playlist extends Component {
 }
 
 export default Playlist;
-
-// style={{ width: "18rem", boxShadow: '0px 0px 110px #181f23'  }}

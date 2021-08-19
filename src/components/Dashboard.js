@@ -105,7 +105,7 @@ export default function Dashboard({ code }) {
       </div>
       <div className="d-grid gap-2">
         <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
-        <Button onClick={() => adding()} style={{ width: "100%" }}>add to playlist</Button>
+        <Button onClick={() => adding()} style={{ width: "100%" }}>Add To Playlist</Button>
       </div>
     </Container>
   );
