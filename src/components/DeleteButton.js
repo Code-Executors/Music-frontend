@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { Component } from 'react'
+import { Button } from 'react-bootstrap'
 
 export class DeleteButton extends Component {
     deleteHandler(){
@@ -12,7 +13,7 @@ export class DeleteButton extends Component {
         console.log(this.props.id);
         return (
             <div>
-                <button onClick ={()=>this.deleteHandler()}>Delete Music</button>
+                <Button onClick ={()=>this.deleteHandler()} variant="primary" style={{ width: "100%"}}>Delete Music</Button>{' '}
             </div>
         )
     }

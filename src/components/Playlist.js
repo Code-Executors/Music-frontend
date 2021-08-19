@@ -1,55 +1,63 @@
 import axios from "axios";
 import React, { Component } from "react";
-import Player from "./Player";
 import AudioPlayer from "./AudioPlayer";
-// import useAuth from "./useAuth"
 import DeleteButton from "./DeleteButton";
+import { Card } from "react-bootstrap";
+import { ListGroup } from "react-bootstrap";
+import "../css/PlayList.css";
 
 export class Playlist extends Component {
   constructor(props) {
     super(props);
     this.state = {
       songs: [],
-      accessToken:'',
+      accessToken: "",
     };
   }
 
   componentDidMount() {
     axios.get("http://localhost:3001/song").then((response) => {
-      // console.log(response.data.playlist);
-      this.setState({songs:response.data.playlist});
-
+      this.setState({ songs: response.data.playlist });
     });
-    
+
     let accessToken = localStorage.getItem("token");
-    // console.log(accessToken);
+
     this.setState({
-        accessToken:accessToken
+      accessToken: accessToken,
     });
   }
 
-  afterDelete=(newVal)=>{
+  afterDelete = (newVal) => {
     this.setState({
-        songs:newVal
-    })
-  }
- 
+      songs: newVal,
+    });
+  };
+
   render() {
-      console.log(this.state.songs);
     return (
       <>
-      <h1>hello</h1>
         {this.state.songs.map((elem) => {
-            return(
-
-          <div>
-              <h1>{elem.title}</h1>
-              <p>{elem.artist}</p>
-              <AudioPlayer  />
-              <DeleteButton id={elem._id} afterDelete = {this.afterDelete}/>
-            
-          </div>
-            )
+          return (
+            <div>
+              <Card className="addedPlayList">
+                <Card.Header>{elem.title}</Card.Header>
+                <ListGroup variant="flush">
+                  <ListGroup.Item>{elem.artist}</ListGroup.Item>
+                  <ListGroup.Item>
+                    <AudioPlayer />
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <DeleteButton
+                      id={elem._id}
+                      afterDelete={this.afterDelete}
+                    />
+                  </ListGroup.Item>
+                  
+                </ListGroup>
+                <br></br>
+              </Card>
+            </div>
+          );
         })}
       </>
     );
@@ -57,3 +65,5 @@ export class Playlist extends Component {
 }
 
 export default Playlist;
+
+// style={{ width: "18rem", boxShadow: '0px 0px 110px #181f23'  }}
