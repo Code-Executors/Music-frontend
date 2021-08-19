@@ -4,7 +4,6 @@
 }
 
 .container {
-<<<<<<< HEAD
     padding: 1rem
 }
 .flip-card {
@@ -52,12 +51,3 @@
   transform: rotateY(180deg);
 }
 
-=======
-  padding: 1rem;
-  /* box-shadow: 0px 0px 110px #181f23; */
-}
-
-
-
-/* style={{ width: "18rem", boxShadow: '0px 0px 110px #181f23'  }} */
->>>>>>> e1e1593af14ca9d5d05b44af32f1ddfd955f2332

@@ -4,6 +4,7 @@ import { ListGroup } from "react-bootstrap";
 import { ListGroupItem } from "react-bootstrap";
 // import Image from "react-bootstrap/Image";
 import "../css/Profile.css";
+import { Button } from "react-bootstrap";
 
 
 export class Profile extends Component {
@@ -11,26 +12,20 @@ export class Profile extends Component {
     return (
       <>
       <h1 className="hello">Hello!</h1>
-      <p className="para">Want to edit your profile? Find an old playlist? Put off work for a while? You can do it all here.</p>
+      <p className="para">Want to edit your profile? Put off work for a while? You can do it all here.</p>
         {/* <Image src="./img/pexels-sebastian-ervi-1763075.jpg" fluid /> */}
-        <Card style={{ width: "18rem" }}>
+        <Card style={{ width: "20rem",margin:"auto",boxShadow: '0px 0px 110px #181f23' }}>
           <Card.Img variant="top" src="./img/Jamal.png" />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Text>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </Card.Text>
+            <Card.Title>User Name: Jamal Eldeen Wari</Card.Title>
+
           </Card.Body>
-          <ListGroup className="list-group-flush">
-            <ListGroupItem>Cras justo odio</ListGroupItem>
-            <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-            <ListGroupItem>Vestibulum at eros</ListGroupItem>
+          <ListGroup className="list-group-flush" >
+            <ListGroupItem>User ID: xa7d9q0862ivuth0fv3c9b78f</ListGroupItem>
+            <ListGroupItem>Email: jamailspider@gmail.com </ListGroupItem>
+            <ListGroupItem>Country: Jordan</ListGroupItem>
+            <Button style={{ width: "100%"}}>Edit Profile</Button>
           </ListGroup>
-          <Card.Body>
-            <Card.Link href="#">Card Link</Card.Link>
-            <Card.Link href="#">Another Link</Card.Link>
-          </Card.Body>
         </Card>
       </>
     );
