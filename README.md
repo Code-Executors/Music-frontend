@@ -41,4 +41,3 @@ Spotify Documents of how to use their library and implemented to your code.
 [Organization Repo](https://github.com/Code-Executors)
 [Code-Executors / Music-frontend](https://github.com/Code-Executors/Music-frontend)
 [Code-Executors / Music-backend](https://github.com/Code-Executors/Music-backend)
-
