@@ -1,8 +1,9 @@
 import axios from 'axios'
 import React, { Component } from 'react'
+import { Button } from 'react-bootstrap'
 
 export class DeleteButton extends Component {
-    
+
     deleteHandler() {
         axios.delete(`http://localhost:3001/songs/${this.props.id}`).then((response) => {
             this.props.afterDelete(response.data.playlist)
@@ -13,7 +14,7 @@ export class DeleteButton extends Component {
         console.log(this.props.id);
         return (
             <div>
-                <button onClick={() => this.deleteHandler()}>Delete Song</button>
+                <Button onClick={() => this.deleteHandler()} variant="primary" style={{ width: "100%" }}>Delete Music</Button>{' '}
             </div>
         )
     }

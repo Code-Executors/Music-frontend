@@ -9,10 +9,10 @@ const code = new URLSearchParams(window.location.search).get("code");
 export class App extends Component {
   render() {
     return (
-     <>
-      {code ? <Dashboard code={code} /> : <Login />}
+      <>
+        {code ? <Dashboard code={code} /> : <Login />}
       </>
-      )
-    }
-  } 
+    )
+  }
+}
 export default App
