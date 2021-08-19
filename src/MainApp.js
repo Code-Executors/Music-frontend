@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import AboutUs from "./screens/AboutUs";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Playlist from "./components/Playlist";
-import Login from "./components/Login";
 import Profile from "./screens/Profile";
 
 export class MainApp extends Component {
@@ -19,9 +18,7 @@ export class MainApp extends Component {
             <Route exact path="/">
               <App />
             </Route>
-            <Route path="/play">
-              <Login />
-            </Route>
+
             <Route path="/profile">
               <Profile />
             </Route>
@@ -29,9 +26,11 @@ export class MainApp extends Component {
             <Route path="/about">
               <AboutUs />
             </Route>
+
             <Route path="/playlist">
               <Playlist />
             </Route>
+            
           </Switch>
         </Router>
 

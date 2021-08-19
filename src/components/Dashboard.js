@@ -81,9 +81,8 @@ export default function Dashboard({ code }) {
     return () => (cancel = true);
   }, [search, accessToken]);
 
-  // console.log(playingTrack);
   return (
-    <Container className="d-flex flex-column py-2" style={{ height: "100vh",boxShadow: '0px 0px 110px #181f23' }}>
+    <Container className="d-flex flex-column py-2" style={{ height: "100vh", boxShadow: '0px 0px 110px #181f23' }}>
       <Form.Control
         type="search"
         placeholder="Search Songs/Artists"
@@ -99,15 +98,17 @@ export default function Dashboard({ code }) {
           />
         ))}
         {searchResults.length === 0 && (
-          <div className="text-center" style={{ whiteSpace: "pre",boxShadow: '0px 0px 110px #181f23' }}>
+          <div className="text-center" style={{ whiteSpace: "pre", boxShadow: '0px 0px 110px #181f23' }}>
             {lyrics}
           </div>
         )}
       </div>
-      <div>
+      <div className="d-grid gap-2">
         <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
-        <Button onClick={() => adding()} style={{ width: "100%"}}>add to playlist</Button>
+        <Button onClick={() => adding()} style={{ width: "100%" }}>Add To Playlist</Button>
       </div>
     </Container>
   );
 }
+
+
